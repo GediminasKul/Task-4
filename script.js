@@ -17,5 +17,5 @@ fetch('./cars.json')
     return response.json();
   })
   .then(function (data) {
-    console.log(data);
+    gen(data);
   });

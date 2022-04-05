@@ -19,3 +19,10 @@ fetch('./cars.json')
   .then(function (data) {
     gen(data);
   });
+
+function createDiv(brand, models) {
+  const createNewDiv = document.createElement('div');
+  createNewDiv.innerHTML = `            <h2>Car brand is: ${brand}</h2>
+ <p>Models: ${models}</p>`;
+  return createNewDiv;
+}

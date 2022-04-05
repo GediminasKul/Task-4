@@ -35,3 +35,9 @@ function createDiv(brand, models) {
   createNewDiv.style.padding = '0.8rem';
   return createNewDiv;
 }
+
+function gen(array) {
+  array.forEach((element) => {
+    outputDiv.append(createDiv(element.brand, element.models));
+  });
+}

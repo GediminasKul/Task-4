@@ -24,5 +24,14 @@ function createDiv(brand, models) {
   const createNewDiv = document.createElement('div');
   createNewDiv.innerHTML = `            <h2>Car brand is: ${brand}</h2>
  <p>Models: ${models}</p>`;
+  createNewDiv.classList.add('div-style');
+  createNewDiv.style.width = '35%';
+  createNewDiv.style.background = 'Gainsboro';
+  createNewDiv.style.display = 'block';
+  createNewDiv.style.margin = '0.5rem auto';
+  createNewDiv.style.justifyContent = 'Center';
+  createNewDiv.style.borderRadius = '5px';
+  createNewDiv.style.wordWrap = 'break-word';
+  createNewDiv.style.padding = '0.8rem';
   return createNewDiv;
 }

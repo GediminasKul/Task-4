@@ -18,6 +18,9 @@ fetch('./cars.json')
   })
   .then(function (data) {
     gen(data);
+  })
+  .catch(function (err) {
+    console.log(`error: ${err}`);
   });
 
 function createDiv(brand, models) {
